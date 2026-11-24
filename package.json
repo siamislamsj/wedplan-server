@@ -1,0 +1,27 @@
+{
+  "name": "wedplan-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "make-admin": "node scripts/make-admin.js",
+    "seed": "node scripts/seed.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.0.0",
+    "jose": "^6.0.0",
+    "mongodb": "^6.15.0",
+    "stripe": "^18.0.0",
+    "zod": "^3.24.2",
+    "multer": "^2.0.2"
+  }
+}
